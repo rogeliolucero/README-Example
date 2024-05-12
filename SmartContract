@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.12 <0.9.0;
+
+contract SmartContractLucero {
+    uint public lucerovalue;
+
+    function setValue(uint _Value) external {
+        
+        
+        require(_Value >=100, "New value cannot be zero");
+        
+        
+        assert(_Value >=100); 
+        
+        
+        if (_Value >= 100) 
+        {
+            revert("Value cannot be greater than 500);
+        }
+
+        value =_Value;
+    }
+}
